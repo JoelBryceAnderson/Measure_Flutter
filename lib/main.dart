@@ -54,16 +54,21 @@ class _RulerPageState extends State<RulerPage> {
                     height: 48.0,
                     width: 48.0,
                     image: new AssetImage('assets/ruler.png')),
-                new Text(
-                  'Measure',
-                  style: new TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                      fontSize: 24.0),
-                ),
-                new Text(
-                  'Made by Joel Anderson',
-                  style: new TextStyle(color: Colors.white),
+                new Container(
+                    margin: const EdgeInsets.only(top: 8.0),
+                    child: new Text(
+                      'Measure',
+                      style: new TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          fontSize: 24.0),
+                    )),
+                new Container(
+                  margin: const EdgeInsets.only(top: 8.0),
+                  child: new Text(
+                    'Made by Joel Anderson',
+                    style: new TextStyle(color: Colors.white),
+                  ),
                 ),
               ],
             ),
